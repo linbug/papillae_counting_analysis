@@ -1,0 +1,13 @@
+I have some count data that quantifies hair density on treated and untreated plants. I am unsure of the best way of analysing these data, based on some features of the dataset.
+
+There are three levels: 
+
+- the uppermost tier is the treatment (control/treatment 1/treatment 2). 
+- The second tier describes the individual plants that received each treatment (2-8 plants per treatment). 
+- The third tier describes replicate leaves for the hair counting (2-8 replicates per plant). 
+
+For the control plants, there are only really two tiers. This is because all of the plants (including the treatment plants) started off as genetically identical (clones), so I am considering the control replicates to be in the same tier as the individual treatment plants.
+
+To add further complexity, several of these readings are 0 (i.e. there were no hairs observed at all).
+
+I think I want some equivalent of a nested ANOVA to test whether there's a significant difference in means among groups. My question is what would an appropriate test be given: 1. The extremely unbalanced design 2. The zero frequency data?
